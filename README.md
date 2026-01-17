@@ -1,109 +1,94 @@
-✈️ SkyBook – Airline Reservation Platform (C++)
+# ✈️ SkyBook – Airline Reservation Platform (C++)
 
-A production-inspired airline reservation system built using C++, Object-Oriented Programming, Data Structures, and File Persistence.
+## 📌 Overview
 
-🚀 Project Overview
+**SkyBook** is a console-based **Airline Reservation System** developed in **C++**, designed to model a real-world airline booking workflow.  
+The project emphasizes **Object-Oriented Programming (OOP)**, **Data Structures**, and **File Persistence**, making it suitable for **software engineering interviews and resumes**.
 
-SkyBook is a console-based airline reservation platform that simulates the core functionality of a real-world airline booking system.
-It is designed with clean OOP architecture, efficient data structures, and persistent storage, making it highly relevant for MAANG/FAANG interviews and resumes.
+---
 
-The system supports flight management, ticket booking, cancellations, and waiting list handling, all while ensuring data consistency across program executions.
+## 🎯 Project Goals
 
-🎯 Key Objectives
+- Apply **object-oriented design** to a real-world system
+- Use **data structures** for efficient data management
+- Implement **persistent storage** using file handling
+- Build a project that is **interview-discussable and resume-ready**
 
-Demonstrate strong fundamentals of C++
+---
 
-Apply Object-Oriented Design to a real-world problem
+## 🧠 Technologies & Concepts
 
-Use Data Structures to manage flights, bookings, and waiting lists
+### Language
+- **C++**
 
-Implement file handling for persistent data storage
+### Core Concepts
+- Object-Oriented Programming (OOP)
+- Data Structures & Algorithms (DSA)
+- File Handling using `fstream`
+- Modular and scalable design
 
-Build an interview-discussable, resume-worthy project
+---
 
-🧠 Core Concepts Used
-✅ Object-Oriented Programming
+## 🧩 System Design
 
-Classes and objects
+### User Roles
+- **Admin**
+- **Passenger**
 
-Inheritance (User → Admin / Passenger)
+### Core Components
+- Flight Management
+- Booking Management
+- Seat Availability Tracking
+- Waiting List Handling
+- Persistent Data Storage
 
-Encapsulation and abstraction
+---
 
-Modular and scalable design
+## ✨ Features
 
-✅ Data Structures & Algorithms
+### Admin Features
+- Add new flights
+- Update existing flight details
+- Remove flights
+- View all available flights
 
-vector → store flights and bookings
+### Passenger Features
+- View available flights
+- Book airline tickets
+- Cancel bookings
+- View booking history
 
-queue → manage waiting list
+### System Features
+- Automatic seat allocation
+- Waiting list for full flights
+- Unique booking ID generation
+- Persistent storage across program runs
 
-Searching and updating algorithms
+---
 
-Seat availability tracking logic
-
-✅ File Handling
-
-Persistent storage using .txt files
-
-Automatic data load on program start
-
-Automatic data save on program exit
-
-✨ Features
-👨‍✈️ Admin Features
-
-Add new flights
-
-Remove existing flights
-
-Update flight details
-
-View all available flights
-
-🧍 Passenger Features
-
-View available flights
-
-Book airline tickets
-
-Cancel booked tickets
-
-View booking history
-
-⚙️ System Features
-
-Automatic seat allocation
-
-Waiting list for fully booked flights
-
-Unique booking ID generation
-
-Persistent storage across runs
-
-🗂️ File Structure
-SkyBook/
+## 🗂️ Project Structure
+SkyBook Airline Reservation Platform/
 │
-├── main.cpp          # Complete application source code
-├── flights.txt       # Stores flight data (auto-generated)
-├── bookings.txt      # Stores booking records (auto-generated)
-└── README.md         # Project documentation
-📄 Data Storage Format
-flights.txt
+├── project.cpp # Application source code
+├── flights.txt # Stores flight data (auto-generated)
+├── bookings.txt # Stores booking records (auto-generated)
+
+---
+
+## 📄 Data Persistence
+
+### flights.txt
 FlightNumber Source Destination Date Time TotalSeats AvailableSeats
 AI101 NYC LA 2026-01-20 10:00 150 150
 
-bookings.txt
+
+### bookings.txt
 BookingID PassengerName FlightNumber SeatNumber
 AI1011 John AI101 1
-🧪 Example Use Cases
 
-Admin creates multiple flights for different routes
-
-Passengers browse flights and book tickets
-
+### 🧪 Example Workflow
+Admin adds multiple flights
+Passenger searches and books tickets
 Seat availability updates automatically
-
-Cancellations free seats for new bookings
-
-Waiting list handles full-capacity flights
+Ticket cancellation restores seats
+Waiting list manages overflow bookings
